@@ -140,7 +140,7 @@
                     objectsmap[planet].sundistance = (objectsmap[planet].sundistanceAU * astroUnit * objectsmap[planet].modelsize *0.001) / objectsmap[planet].diametr;
 
                     //objectsmap[planet].sundistance = 
-                    text +=  planet + " model size " + objectsmap[planet].modelsize + "<br>";
+                    text +=  planet + " model size " + objectsmap[planet].modelsize.toFixed(4) + "mm<br>";
                } 
                 document.getElementById("planets").innerHTML = text;
             }

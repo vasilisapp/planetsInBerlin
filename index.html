@@ -61,55 +61,55 @@
             const astroUnit = 149597870700;
 
             var objectsmap = {
-                    mercury: {
+                    Mercury: {
                         modelsize: 0,
                         diametr: 4879000,
                         sundistanceAU: 0.387098,
                         sundistance: 0
                     },
-                    venus: {
+                    Venus: {
                         modelsize: 0,
                         diametr: 12103600,
                         sundistanceAU: 0.723,
                         sundistance: 0
                     },
-                    earth: {
+                    Earth: {
                         modelsize: 0,
                         diametr: 12756200.00,
                         sundistanceAU: 1,
                         sundistance: 0
                     },
-                    mars: {
+                    Mars: {
                         modelsize: 0,
                         diametr: 6792400.00,
                         sundistanceAU: 1.523662,
                         sundistance: 0
                     },
-                    jupiter: {
+                    Jupiter: {
                         modelsize: 0,
                         diametr: 142984000.00,
                         sundistanceAU: 5.2044,
                         sundistance: 0
                     },
-                    saturn: {
+                    Saturn: {
                         modelsize: 0,
                         diametr: 120536000,
                         sundistanceAU: 9.582,
                         sundistance: 0
                     },
-                    uranus: {
+                    Uranus: {
                         modelsize: 0,
                         diametr: 51118000,
                         sundistanceAU: 19.22941195,
                         sundistance: 0
                     },
-                    neptune: {
+                    Neptune: {
                         modelsize: 0,
                         diametr: 49528000.00,
                         sundistanceAU: 30.10366151,
                         sundistance: 0
                     },
-                    sun: {
+                    Sun: {
                         modelsize: 0,
                         diametr: 1392000000.00,
                         sundistanceAU: 0,
@@ -140,7 +140,7 @@
                     objectsmap[planet].sundistance = (objectsmap[planet].sundistanceAU * astroUnit * objectsmap[planet].modelsize *0.001) / objectsmap[planet].diametr;
 
                     //objectsmap[planet].sundistance = 
-                    text +=  planet + " size " + objectsmap[planet].modelsize.toFixed(4) + " mm";
+                    text +=  planet + " size " + objectsmap[planet].modelsize.toFixed(4) + " mm ";
                } 
                 document.getElementById("planets").innerHTML = text;
             }
@@ -182,7 +182,7 @@
         <aside class="sidebar">
         
             <form name="form1">
-                Please enter your model Earth size, mm: <input type="text" id="numb" name="model" value="21"><br>
+                Please enter your model Earth diameter size, mm: <input type="text" id="numb" name="model" value="21"><br>
                 <!-- lat: <input type="text" id="lat" name="lat" value="52.5207936"><br>
                 lon: <input type="text" id="lng" name="lon" value="13.40941094"><br> -->
             </form>
